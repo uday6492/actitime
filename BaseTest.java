@@ -10,6 +10,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
+/**
+ * This is a configuration class
+ * This class is having pre condition and post condition
+ * @author UDAY
+ *
+ */
 public abstract class BaseTest implements IAutoConstant
 {
 
@@ -22,6 +28,9 @@ public abstract class BaseTest implements IAutoConstant
 		System.setProperty(GECKO_KEY, GECKO_VALUE);
 	}
 	
+	/**
+	 * This method is used to open the browser
+	 */
 	@BeforeMethod
 	public void openApp() 
 	{
@@ -31,6 +40,9 @@ public abstract class BaseTest implements IAutoConstant
 		driver.get(URL);
 	}
 	
+	/**
+	 * This method is used to close the browser and take a screen shot if any method fails
+	 */
 	@AfterMethod
 	public void closeApp(ITestResult itres)
 	{
