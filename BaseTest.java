@@ -61,6 +61,10 @@ public abstract class BaseTest implements IAutoConstant
 		driver.close();
 	}
 	
+	/**
+	 * This method is used to generate the Report
+	 */
+	
 	@AfterSuite
 	public void generateReport()
 	{
