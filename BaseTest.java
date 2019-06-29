@@ -62,7 +62,7 @@ public abstract class BaseTest implements IAutoConstant
 	}
 	
 	/**
-	 * This method is used to generate the Report...... by using AfterSuit
+	 * This method is used to generate the Report...... by using @AfterSuite
 	 */
 	
 	@AfterSuite
